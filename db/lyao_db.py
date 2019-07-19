@@ -5,11 +5,11 @@ from DBUtils.PooledDB import PooledDB
 
 class LyaoDB():
     def __init__(self):
-        self.host = 'localhost'
-        self.instance = 'lyao'
+        self.host = '39.105.172.254'
+        self.instance = 'mo'
         self.port = 3306
         self.user = 'root'
-        self.passwd = 't123456'
+        self.passwd = 'mo1234567'
         self.pool = PooledDB(pymysql, 5, host=self.host, port=self.port, db=self.instance, user=self.user,
                              passwd=self.passwd, setsession=['SET AUTOCOMMIT = 1'])
 
