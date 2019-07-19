@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 import pymysql
 from DBUtils.PooledDB import PooledDB

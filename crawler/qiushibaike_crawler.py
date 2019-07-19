@@ -6,7 +6,7 @@ import random
 import time
 from config import crawler_params
 from db.leisure import LeisureService
-from apscheduler.schedulers.blocking import BlockingScheduler
+
 
 
 def crawler_leisure():
@@ -35,10 +35,3 @@ def crawler_leisure():
             else:
                 print('已存在，不入库')
         time.sleep(5)
-
-
-# 创建调度器：BlockingScheduler
-scheduler = BlockingScheduler()
-# 添加任务,时间间隔10m
-scheduler.add_job(crawler_leisure, 'interval', minutes=10, id='qiushi_crawler_leisure_job')
-scheduler.start()

@@ -6,7 +6,6 @@ import random
 import time
 from config import crawler_params
 from db.leisure import LeisureService
-from apscheduler.schedulers.blocking import BlockingScheduler
 
 
 def crawler_leisure():
